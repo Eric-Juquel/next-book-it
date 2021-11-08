@@ -70,18 +70,18 @@ export const loadedUserReducer = (
     case LOAD_USER_REQUEST:
       return {
         loading: true,
-        isAutheticated: false,
+        isAuthenticated: false,
       };
     case LOAD_USER_SUCCESS:
       return {
         loading: false,
-        isAutheticated: true,
+        isAuthenticated: true,
         user: action.payload,
       };
     case LOAD_USER_FAIL:
       return {
         loading: false,
-        isAutheticated: false,
+        isAuthenticated: false,
         error: action.payload,
       };
 
