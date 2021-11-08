@@ -63,7 +63,7 @@ export const authReducer = (state = { user: null }, action) => {
 
 // Load user reducer
 export const loadedUserReducer = (
-  state = {  user: null },
+  state = { loading: true, user: null },
   action
 ) => {
   switch (action.type) {
