@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { toast } from 'react-toastify';
 import { useSelector, useDispatch } from 'react-redux';
 import { clearErrors } from '../../redux/actions/bookingActions';
-import BookingDetailsPage from '../../pages/bookings/[id]';
 
 const BookingDetails = () => {
   const dispatch = useDispatch();

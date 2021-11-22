@@ -43,7 +43,7 @@ const registerUser = async (req, res) => {
 };
 
 // @desc   Current user profile
-// @route  GET/api/me
+// @route  GET/api/user
 // @acces  Private
 const currentUserProfile = async (req, res) => {
   const user = await User.findById(req.user._id);
@@ -55,7 +55,7 @@ const currentUserProfile = async (req, res) => {
 };
 
 // @desc   Update user profile
-// @route  GET/api/me/update
+// @route  GET/api/user/update
 // @acces  Private
 const updateProfile = async (req, res) => {
   const user = await User.findById(req.user._id);

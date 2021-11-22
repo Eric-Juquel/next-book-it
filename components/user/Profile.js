@@ -67,6 +67,8 @@ const Profile = () => {
       avatar,
     };
 
+    console.log('data', userData)
+
     dispatch(updateProfile(userData));
   };
 
